@@ -1,4 +1,4 @@
 def call() {
-Map vars = [dockerUserName: 'pkuma343', dockerPassword: 'Ponkmonk_138202']
+Map vars = [usernamePassword(credentialsId: 'docker', usernameVariable: 'dockerUserName', passwordVariable: 'dockerPassword')]
     return vars
 }
